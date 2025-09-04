@@ -1,0 +1,17 @@
+{
+  "name": "service.convexinfotech.com",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "Devendra Patidar",
+  "license": "ISC",
+  "description": "A Sotware solution company that provided end to end solutions.",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
