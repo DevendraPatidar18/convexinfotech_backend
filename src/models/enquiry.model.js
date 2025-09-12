@@ -1,7 +1,7 @@
-import { getFirestore } from "../config/firestore.js";
+import  database  from "../db/database.js";
 import { z } from "zod"; // for validation
 
-const db = getFirestore();
+const db = database();
 const collection = db.collection("enquiries");
 
 // ✅ Validation schema with Zod

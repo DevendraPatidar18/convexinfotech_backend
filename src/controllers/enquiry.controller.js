@@ -1,8 +1,20 @@
 import asyncHandler from "../utils/asyncHandler.js";
+import { EnquiryModel } from "../models/enquiry.model.js";
 
 
 const createEnquiry = asyncHandler(async (req, res) => {
-    
+  //get data from req.body
+  //validate data
+  //save to database
+  //send response
+  const {name, email, enquireAbout, enquiryDescription} = req.body;
+  console.log(name, email, enquireAbout, enquiryDescription);
+  const enquiry = await EnquiryModel.create({
+  name,
+  email,
+  enquireAbout,
+  enquiryDescription,
+});
   res.status(201).json({ message: "Enquiry created successfully" });
 });
 
