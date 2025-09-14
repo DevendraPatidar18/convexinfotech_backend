@@ -9,7 +9,7 @@ const app = express();
 
 app.use(cors({
   origin: process.env.CORS_ORIGIN, // replace with your client's origin
-  credentials: true, // allow cookies to be sent
+  //credentials: flase, // allow cookies to be sent
 }));
 
 app.use(express.json({ limit: '32kb' })); // to handle large payloads
