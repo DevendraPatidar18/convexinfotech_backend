@@ -144,5 +144,4 @@ dist
 # End of https://www.toptal.com/developers/gitignore/api/node
 .node_module/
 .env
-
 firestore_key.json
