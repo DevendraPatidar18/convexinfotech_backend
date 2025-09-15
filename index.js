@@ -5,7 +5,7 @@ import database from "./src/db/database.js";
 import app from "./src/app.js";
 const port = 3000;
 
-database()
+await database()
 
 
 console.log(process.env.H);
