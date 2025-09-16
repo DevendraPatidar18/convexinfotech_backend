@@ -1,14 +1,14 @@
 import express from "express"
 import dotenv from "dotenv";
-dotenv.config();
-import app from "../ser/server/src/app.js";
-import database from "../ser/server/src/db/database.js";
+dotenv.config({path: './.env'});
+import app from "./src/app.js";
+import database from "./src/db/database.js";
 const port = 3000;
 
-await database()
+
 
 console.log(process.env.H);
-
+database()
 //routes
 import enquiryRouter from "../ser/server/src/routes/enquiry.routes.js";
 
