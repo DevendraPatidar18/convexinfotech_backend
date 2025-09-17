@@ -1,5 +1,4 @@
 import express from 'express';
-import dotenv from 'dotenv';
 import database from './db/database.js';
 import cookies from 'cookie-parser';
 import cors from 'cors';
@@ -7,10 +6,11 @@ import cors from 'cors';
 
 const app = express();
 
+
 app.use(cors({
-  origin: process.env.CORS_ORIGIN, // replace with your client's origin
+  origin: "*",          // open access
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-  allowedHeaders: ["Content-Type", "Authorization"],
+  allowedHeaders: ["Content-Type", "Authorization"]
   //credentials: flase, // allow cookies to be sent
 }));
 
