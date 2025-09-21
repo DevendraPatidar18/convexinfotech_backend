@@ -9,11 +9,6 @@ console.log(process.env.CORS_ORIGIN);
 
 console.log(process.env.H);
 database()
-//routes
-import enquiryRouter from "./src/routes/enquiry.routes.js";
-
-app.use("/api/v1/enquiries", enquiryRouter);
-
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)

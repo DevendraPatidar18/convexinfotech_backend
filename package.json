@@ -13,7 +13,8 @@
   "license": "ISC",
   "description": "A Sotware solution company that provided end to end solutions.",
   "dependencies": {
-    "@vercel/node": "^5.3.22",
+    "@google/genai": "^1.20.0",
+    "@vercel/node": "^4.0.0",
     "bcryptjs": "^3.0.2",
     "cloudinary": "^2.7.0",
     "cookie-parser": "^1.4.7",

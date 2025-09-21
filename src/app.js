@@ -19,5 +19,13 @@ app.use(express.urlencoded({ extended: true, limit: '32kb' }));
 app.use(express.static('public'));
 app.use(cookies());
 
+//routes
+import enquiryRouter from "./routes/enquiry.routes.js";
+//enquiry routes
+app.use("/api/v1/enquiries", enquiryRouter);
 
+
+//chatbot routes
+import chatbotRouter from "./routes/chatbot.routes.js";
+app.use("/api/v1/chatbot", chatbotRouter);
 export default app;
