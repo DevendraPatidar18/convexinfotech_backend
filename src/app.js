@@ -2,6 +2,7 @@ import express from 'express';
 import database from './db/database.js';
 import cookies from 'cookie-parser';
 import cors from 'cors';
+import adminUserRouter from './routes/admin.routes.js';
 
 
 const app = express();
@@ -28,4 +29,9 @@ app.use("/api/v1/enquiries", enquiryRouter);
 //chatbot routes
 import chatbotRouter from "./routes/chatbot.routes.js";
 app.use("/api/v1/chatbot", chatbotRouter);
+
+
+//admin routes
+import adminRouter from "./routes/admin.routes.js";
+app.use("/api/v1/admin", adminUserRouter);
 export default app;
